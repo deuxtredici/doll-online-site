@@ -1,0 +1,144 @@
+body{
+    background: linear-gradient(#ffdfe6, #fff0a2) repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+}
+
+#pageTitle{
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 60px;
+    color: rgb(135, 226, 231);
+    display: flex;
+    margin: auto;
+    align-content: center;
+    justify-content: center;
+    text-shadow: 4px 4px rgb(255, 155, 155);
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    -ms-transform: translateY(150%);
+    transform: translateY(150%);
+}
+
+.window{
+    box-shadow: inset -1px -1px #d5869d, inset 1px 1px #dfdfdf, inset -2px -2px #ffb5b5, inset 2px 2px #fff;
+}
+
+label{
+    margin-top: 5px;
+}
+
+input[type=text]{
+    box-shadow: inset -1px -1px #ffc5fc, inset 1px 1px #a7679f, inset -2px -2px #e5d7d7, inset 2px 2px #aeceff;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+
+.faviconDesc{
+    display: flex;
+    flex-direction: row;
+    width: 240px;
+    margin-left: 5px;
+    margin-bottom: 10px;	
+}
+
+#faviconContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+}
+
+.favicon{
+    padding: 25px;
+}
+
+#desktopContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%  
+}
+
+#notesContainer{
+    background-color: #ebc9e6;
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    padding: 20px;
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+#desktopBar{
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-color: #ebc9e6;
+}
+
+#startButton{
+    height: 80%;
+    transform: translateY(10%);
+    font-weight: bold;
+    width: 100px;
+    background-color: #ebc9e6;
+}
+
+ul{
+    display: none;
+    position: relative;
+    bottom: 150px;
+    padding: 55px 0 0 0;
+    margin: 0;
+    transform: rotate(180deg);
+}
+
+ul:hover{
+    display: block; 
+}
+
+li{
+    background: #ddd;
+    padding: 10px;
+    list-style: none;
+    transform: rotate(-180deg);
+}
+
+li:hover{ 
+    background: #eee;
+    cursor: pointer;
+}
+
+#dd{
+    display: inline-block;
+    height:40px;
+}
+
+#dd:active ul{
+    display: block;
+} 
+
+#dd:active ul:hover{
+    display: block;
+}
+
+#dd:active #startButton{
+    display: inline-block;
+    padding: 10px;
+    background: #ccc;
+    color: white;
+}
+
+

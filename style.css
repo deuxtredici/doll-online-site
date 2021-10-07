@@ -1,0 +1,72 @@
+body{
+    background: url("images/trippy2.gif")no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#pageTitle{
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 60px;
+    color: rgb(252, 204, 248);
+    display: flex;
+    margin: auto;
+    align-content: center;
+    justify-content: center;
+    text-shadow: 4px 4px rgb(0, 0, 0);
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    -ms-transform: translateY(150%);
+    transform: translateY(150%);
+}
+
+
+#loginContainer{
+    background-color: #ebc9e6;
+    width: 250px;
+    margin: auto;
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+#loginTitleBar{
+    height: 20px;
+    background: linear-gradient(90deg,#ff93d9,#a1069c);
+}
+
+#loginFormContainer{
+    display: flex;
+}
+
+#loginForm{
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+#loginButton{
+    margin:auto;
+    background-color: #fbb5db;
+}
+
+label{
+    margin-top: 5px;
+}
+
+.accountInput{
+    margin-bottom: 10px;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100%;
+    }
+}

@@ -1,0 +1,211 @@
+body{
+    background: url("images/trippy2_optimize_blur.gif")no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+a{
+  color: inherit; 
+}
+
+#windowContainer{
+    padding: 0;
+    position: absolute;
+    display:flex;
+    flex-direction:column;
+    margin:auto;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    animation-name: fadeIn;
+    animation-duration: 3s;
+}
+
+#overlayWindow{
+  background-color: #ebc9e6;
+  height:150px;
+  width:200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-50%) translateX(50%);
+  z-index: 1;
+}
+
+#pageTitle{
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 60px;
+    color: rgb(135, 226, 231);
+    display: flex;
+    margin: auto;
+    align-content: center;
+    justify-content: center;
+    text-shadow: 4px 4px rgb(255, 155, 155);
+}
+
+#headWindow{
+    background-color: #ebc9e6;
+    width: 400px;
+    height: 100px;
+    margin: auto;    
+}
+
+#loginWindow{
+    background-color: #ebc9e6;
+    width: 250px;
+    height: 150px;
+    margin: auto;
+    z-index: 2;
+    transform: translateY(-10%);
+}
+
+#loginTitleBar{
+    height: 20px;
+    background: linear-gradient(90deg,#9fc0fe, #ed94b5);
+}
+
+#loginFormContainer{
+    display: flex;
+}
+
+#loginForm{
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+#loginButton{
+    margin:auto;
+    padding: 5px;
+    background-color: #d3c9f5;
+    box-shadow: inset -1px -1px #fdb2b2, inset 1px 1px #fff, inset -2px -2px #b1b1b1, inset 2px 2px #dfd3d3;
+}
+
+.window{
+    box-shadow: inset -1px -1px #d5869d, inset 1px 1px #dfdfdf, inset -2px -2px #ffb5b5, inset 2px 2px #fff;
+}
+
+label{
+    margin-top: 5px;
+}
+
+.accountInput{
+    margin-bottom: 10px;
+}
+
+input[type=text]{
+    box-shadow: inset -1px -1px #ffc5fc, inset 1px 1px #a7679f, inset -2px -2px #e5d7d7, inset 2px 2px #aeceff;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+
+#imageOverlay{
+  z-index: 3;
+  margin:auto;
+  height:150px;
+  width:200px;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-150%) translateX(75%);
+}
+
+.meter { 
+    height: 15px;
+    position: relative;
+    background: #f3efe6;
+    overflow: hidden;
+}
+
+.meter span {
+    display: block;
+    height: 100%;
+}
+
+.progress {
+    background: linear-gradient(90deg,#9fc0fe, #ed94b5);    
+    animation: progressBar 8s steps(8);
+    animation-fill-mode:both; 
+}
+
+@keyframes progressBar {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+.progressBar{
+  	border-style: inset;
+  	border-color: #a7679f;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+	
+#progressContainer{
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+#progressWindow{
+    background-color: #ebc9e6;
+    width: 250px;
+    height: 150px;
+    margin: auto;
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+.faviconDesc{
+    display: flex;
+    flex-direction: row;
+    width: 240px;
+    margin-left: 5px;
+    margin-bottom: 10px;	
+}
+
+#faviconContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+}
+
+.favicon{
+    padding: 25px;
+}
+
+.numbers {
+  width: auto;
+  display: flex;
+  animation: countNumber 9s forwards;
+  animation-timing-function: steps(9);
+}
+
+.numbers div {
+  text-align: center;
+  flex: 0 0 200px;
+}
+
+@keyframes countNumber {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -1800px;
+  }
+}
+
