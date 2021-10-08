@@ -96,28 +96,56 @@ input[type=text]{
     background-color: #ebc9e6;
 }
 
-ul{
+#menu-start{
     display: none;
     position: relative;
+ 		width: 200px;
     bottom: 150px;
     padding: 55px 0 0 0;
     margin: 0;
-    transform: rotate(180deg);
+    transform: rotate(180deg) translate(0px, 60%);
 }
 
-ul:hover{
-    display: block; 
+#menu-start:hover{
+    display: flex; 
+  	flex-direction: row;
 }
 
-li{
-    background: #ddd;
+#menu-window{
+  	background-color: #ebc9e6;
+}
+
+#menu-opt{
+		display: flex;
+  	flex: 1;
+  	flex-direction: column;
+  	width: 150px;
+}
+
+.submenu{
+  	display: none;
+    position: relative;
+ 		width: 150px;
+    bottom: 150px;
+    padding: 55px 0 0 0;
+    margin: 0;
+}
+
+.submenu:hover{
+  	display: flex;
+  	flex-direction: column;
+}
+
+.opt{
+    background-color: #ebc9e6;
     padding: 10px;
+  	flex-basis: 20px;
     list-style: none;
     transform: rotate(-180deg);
 }
 
-li:hover{ 
-    background: #eee;
+.opt:hover{ 
+    background-color: #ffb5b5;
     cursor: pointer;
 }
 
@@ -126,12 +154,19 @@ li:hover{
     height:40px;
 }
 
-#dd:active ul{
-    display: block;
+#dd:active #menu-start{
+    display: flex;
+  	flex-direction: row;
 } 
 
-#dd:active ul:hover{
-    display: block;
+#dd:active #menu-start:hover{
+    display: flex;
+  	flex-direction: row;
+}
+
+#dd:active #dd:hover #menu-start{
+  	display: flex;
+  	flex-direction: row;
 }
 
 #dd:active #startButton{
@@ -139,6 +174,19 @@ li:hover{
     padding: 10px;
     background: #ccc;
     color: white;
+}
+
+#banner-os{
+  	font-family: 'Share Tech Mono', monospace;
+    font-size: 30px;
+  	display: flex;
+    writing-mode: vertical-rl;
+  	width: 30px;
+    text-orientation: mixed;
+  	font-weight: bold;
+    justify-content: right;
+  	align-content: start;
+  	background-color:#d5869d;
 }
 
 

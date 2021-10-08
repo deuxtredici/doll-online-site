@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="images/icon.png">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+    </style>
+    <title>Doll Online</title>
+</head>
+<body>
+    <div id="windowContainer">
+		<div id="overlayWindow" class="window">
+			<div id="overlayWindowBar" class="title-bar">
+				<p id="overlayWindowBarText" class="title-bar-text">[ERROR]</p>
+				<div class="title-bar-controls">
+					<button style="background-color:#d3c9f5" aria-label="Minimize" class="toolbar"></button>
+					<button style="background-color:#d3c9f5" aria-label="Maximize" class="toolbar"></button>
+					<button style="background-color:#d3c9f5" aria-label="Close" class="toolbar"></button>
+				</div>
+			</div>
+			<img id="static" style="transform: scale(100%);" src="images/static.gif">       
+		</div>
+		<div id="imageOverlay">
+			<img id="miku" src="images/oceanmikuicon.gif" height=150px width=100px>
+		</div>														 
+		<div id="headWindow" class="window">        
+			<div id="loginTitleBar" class="title-bar">
+			<p id="loginBarText" class="title-bar-text">[ERROR]</p>
+				<div class="title-bar-controls">
+					<button style="background-color:#d3c9f5" aria-label="Minimize" class="toolbar"></button>
+					<button style="background-color:#d3c9f5" aria-label="Maximize" class="toolbar"></button>
+					<button style="background-color:#d3c9f5" aria-label="Close" class="toolbar"></button>
+				</div>
+			</div>
+			<p id="pageTitle">DOLL ONLINE</p>
+		</div>
+		<div id="loginWindow" class="window">
+			<div id="loginTitleBar" class="title-bar">
+				<p id="loginBarText" class="title-bar-text">Welcome to Doll Online!</p>
+				<div class="title-bar-controls">
+					<button style="background-color:#d3c9f5" aria-label="Minimize" class="toolbar"></button>
+					<button style="background-color:#d3c9f5" aria-label="Maximize" class="toolbar"></button>
+					<button style="background-color:#d3c9f5" aria-label="Close" class="toolbar"></button>
+				</div>
+			</div>
+			<div id="loginFormContainer">
+				<form id="loginForm">
+					<label for="usernameInput">Username: </label>
+					<input type="text" id="usernameInput" class="accountInput">
+
+					<label for="passwordInput">Password: </label>
+					<input type="text" id="passwordInput" class="accountInput">
+
+					<a href="loading.html" id="loginButton" class="button">Login</a>
+				</form>
+			</div>
+		</div>
+	</div>
+    <audio autoplay>
+        <source src="audio/SFP2.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+</html>
