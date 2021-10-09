@@ -43,46 +43,45 @@
         </div>
       </div>
       <div id="desktopBar" class="window">
-        <div id="dd" class="dropdown-content"> <button id="startButton" onclick=""
+        <div id="dd"> <button id="startButton" onclick="" class="dropbtn"><img
 
-            class="dropbtn"><img src="images/yumeii_icon.png" height="16px" width="16px">
-            Start </button>
-          <div id="menu-start">
+              src="images/yumeii_icon.png" height="16px" width="16px"> Start </button>
+          <div id="menu-start" class="dropup-content">
+            <div id="banner-os"> DOLLONLINE.9X </div>
             <div id="menu-window" class="window">
               <div id="menu-opt" class="menu">
-                <div id="opt-shutdown" class="opt"> <img src="images/Shutdown.png"> Shutdown... </div>
-                
-                <div id="opt-run" class="opt"> <img src="images/Run.png"> Run... </div>
-                
-              	<div id="opt-help" class="opt"> <img src="images/Help.png"> Help </div>
-                
-                <div id="opt-find" class="opt">
-                  <img src="images/Search.ico"> Find
+                <div id="opt-program" class="opt dropdown-content"> <img src="images/Programs.png">
+                  Programs
+                  <div id="menu-program" class="submenu window">
+                    <div><img src="images/Programs.png">Accessories</div>
+                    <div><img src="images/Programs.png">StartUp</div>
+                    <div><img height=24px width=24px style="padding:5px;" src="images/Mail.png">DollOnline Exchange</div>
+                    <div><img height=24px width=24px style="padding:5px;" src="images/Internet.png">DollOnline Explorer</div>
+                    <div><img src="images/Programs.png">QuickTime</div>
+                    <div><img src="images/Programs.png">Macromedia</div>
+                    <div><img src="images/Programs.png">Real</div>
+                  </div>
                 </div>
-              	<div id="menu-find" class="submenu"> 
+                <div id="opt-docs" class="opt dropdown-content"> <img src="images/Documents.png">
+                  Documents
+                  <div id="menu-docs" class="submenu window"> </div>
                 </div>
-                
-                <div id="opt-set" class="opt">
-                  <img src="images/Settings.png"> Settings
+                <div id="opt-set" class="opt dropdown-content"> <img src="images/Settings.png">
+                  Settings
+                  <div id="menu-set" class="submenu window"> </div>
                 </div>
-                <div id="menu-set" class="submenu"> 
-                
-                </div>                
-                <div id="opt-docs" class="opt">
-                  <img src="images/Documents.png"> Documents
+                <div id="opt-find" class="opt dropdown-content"> <img src="images/Search.ico">
+                  Find
+                  <div id="menu-find" class="submenu window"> </div>
                 </div>
-                <div id="menu-docs" class="submenu"> 
-                
-                </div>                
-                <div id="opt-program" class="opt">
-                	<img src="images/Programs.png"> Programs
-                </div>
-                <div id="menu-program" class="submenu"> 
-                	
-                </div>
+                <div id="opt-help" class="opt"> <img src="images/Help.png">
+                  Help </div>
+                <div id="opt-run" class="opt"> <img src="images/Run.png">
+                  Run... </div>
+                <div id="opt-shutdown" class="opt"> <img src="images/Shutdown.png">
+                  Shutdown... </div>
               </div>
             </div>
-            <div id="banner-os"> DOLLONLINE.9X </div>
           </div>
         </div>
       </div>

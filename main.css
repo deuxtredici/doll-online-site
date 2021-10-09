@@ -1,4 +1,4 @@
-html{
+*{
   cursor: url(images/cursors/help.cur), help;
   cursor: url(images/cursors/write.cur), copy;
   cursor: url(images/cursors/link.cur), pointer;

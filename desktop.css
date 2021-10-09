@@ -79,7 +79,7 @@ input[type=text]{
 
 #desktopBar{
     height: 40px;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     width: 100vw;
@@ -89,10 +89,10 @@ input[type=text]{
 }
 
 #startButton{
-    height: 80%;
-    transform: translateY(10%);
+    height: 40px;
     font-weight: bold;
     width: 100px;
+  	box-shadow: inset -1px -1px #d5869d, inset 1px 1px #dfdfdf, inset -2px -2px #ffb5b5, inset 2px 2px #fff;
     background-color: #ebc9e6;
 }
 
@@ -100,14 +100,27 @@ input[type=text]{
     display: none;
     position: relative;
  		width: 200px;
-    bottom: 150px;
-    padding: 55px 0 0 0;
+  	bottom: 465px;
     margin: 0;
-    transform: rotate(180deg) translate(0px, 60%);
 }
 
 #menu-start:hover{
     display: flex; 
+  	flex-direction: row;
+}
+
+#dd{
+    display: inline-block;
+  	position: relative;
+}
+
+#dd:hover #menu-start{
+    display: flex;
+  	flex-direction: row;
+} 
+
+#menu-start:hover{
+    display: flex;
   	flex-direction: row;
 }
 
@@ -123,15 +136,19 @@ input[type=text]{
 }
 
 .submenu{
+  	left: 140px;
+  	bottom: 50px;
   	display: none;
-    position: relative;
- 		width: 150px;
-    bottom: 150px;
-    padding: 55px 0 0 0;
+  	position: relative;
+ 		width: 200px;
     margin: 0;
 }
 
-.submenu:hover{
+.submenu.window{
+  	background-color: #ebc9e6;
+}
+
+.submenu.window:hover{
   	display: flex;
   	flex-direction: column;
 }
@@ -139,9 +156,10 @@ input[type=text]{
 .opt{
     background-color: #ebc9e6;
     padding: 10px;
-  	flex-basis: 20px;
+  	height: 40px;
+  	position: relative;
     list-style: none;
-    transform: rotate(-180deg);
+  	display: inline-block;
 }
 
 .opt:hover{ 
@@ -149,25 +167,26 @@ input[type=text]{
     cursor: pointer;
 }
 
-#dd{
-    display: inline-block;
-    height:40px;
+#opt-find:hover #menu-find{
+		display: flex;
+  	flex-direction: column;
 }
 
-#dd:active #menu-start{
-    display: flex;
-  	flex-direction: row;
-} 
-
-#dd:active #menu-start:hover{
-    display: flex;
-  	flex-direction: row;
+#opt-set:hover #menu-set{
+		display: flex;
+  	flex-direction: column;
 }
 
-#dd:active #dd:hover #menu-start{
-  	display: flex;
-  	flex-direction: row;
+#opt-docs:hover #menu-docs{
+		display: flex;
+  	flex-direction: column;
 }
+
+#opt-program:hover #menu-program{
+		display: flex;
+  	flex-direction: column;
+}
+
 
 #dd:active #startButton{
     display: inline-block;
@@ -180,11 +199,11 @@ input[type=text]{
   	font-family: 'Share Tech Mono', monospace;
     font-size: 30px;
   	display: flex;
-    writing-mode: vertical-rl;
+    writing-mode: sideways-lr;
   	width: 30px;
     text-orientation: mixed;
   	font-weight: bold;
-    justify-content: right;
+    justify-content: left;
   	align-content: start;
   	background-color:#d5869d;
 }
