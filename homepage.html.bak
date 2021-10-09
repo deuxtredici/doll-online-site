@@ -15,8 +15,9 @@
     <div id="content">
       <div id="desktopContainer">
         <div id="faviconContainer">
-          <div id="icon1" class="favicon"> <img src="images/Desktop.png">
-            <label for="icon1">Desktop</label> </div>
+          <div id="icon1" class="favicon"> <img src="images/Desktop.png"> <label
+
+              for="icon1">Desktop</label> </div>
           <div id="icon2" class="favicon"> <img src="images/Documents.png"> <label
 
               for="icon2">Documents</label> </div>
@@ -26,8 +27,8 @@
           <div id="icon4" class="favicon"> <img src="images/Network.png"> <label
 
               for="icon4">Network</label> </div>
-          <div id="icon5" class="favicon"> <img src="images/AOL.png"> <label for="icon5">America
-              On-Line</label> </div>
+          <div id="icon5" class="favicon"> <img src="images/AOL.png">
+            <label for="icon5">America On-Line</label> </div>
           <div id="iconCtrl" class="favicon"> <img src="images/Controls.png"> <label
 
               for="iconCtrl">Control Panel</label> </div>
@@ -47,7 +48,7 @@
 
               src="images/yumeii_icon.png" height="16px" width="16px"> Start </button>
           <div id="menu-start" class="dropup-content">
-            <div id="banner-os"> DOLLONLINE.9X </div>
+            <div id="banner-os"> <img height=250px width=28px style="top: 200px;" src="images/OSbanner.jpg"> </div>
             <div id="menu-window" class="window">
               <div id="menu-opt" class="menu">
                 <div id="opt-program" class="opt dropdown-content"> <img src="images/Programs.png">
@@ -55,8 +56,12 @@
                   <div id="menu-program" class="submenu window">
                     <div><img src="images/Programs.png">Accessories</div>
                     <div><img src="images/Programs.png">StartUp</div>
-                    <div><img height=24px width=24px style="padding:5px;" src="images/Mail.png">DollOnline Exchange</div>
-                    <div><img height=24px width=24px style="padding:5px;" src="images/Internet.png">DollOnline Explorer</div>
+                    <div><img style="padding:5px;" src="images/Mail.png" height="24px"
+
+                        width="24px">DollOnline Exchange</div>
+                    <div><img style="padding:5px;" src="images/Internet.png" height="24px"
+
+                        width="24px">DollOnline Explorer</div>
                     <div><img src="images/Programs.png">QuickTime</div>
                     <div><img src="images/Programs.png">Macromedia</div>
                     <div><img src="images/Programs.png">Real</div>

@@ -199,13 +199,18 @@ input[type=text]{
   	font-family: 'Share Tech Mono', monospace;
     font-size: 30px;
   	display: flex;
-    writing-mode: sideways-lr;
   	width: 30px;
+  	height: 425px;
+  	position: relative;
     text-orientation: mixed;
+  	writing-mode: sideways-lr;
   	font-weight: bold;
     justify-content: left;
   	align-content: start;
   	background-color:#d5869d;
 }
 
-
+#banner-pic{
+	  position:absolute;
+  	bottom: 0;
+}
