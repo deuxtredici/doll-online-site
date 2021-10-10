@@ -1,0 +1,29 @@
+body{
+    background-color: black;
+}
+
+#whiteDot{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: white;
+    transform: translateX(30px) translateY(20px);
+}
+
+#whiteDot:hover{
+    animation: glow 1s forwards;
+}
+
+@keyframes glow {
+    100%{
+        -webkit-box-shadow:0px 0px 72px 9px rgba(255,255,255,0.78);
+        -moz-box-shadow: 0px 0px 72px 9px rgba(255,255,255,0.78);
+        box-shadow: 0px 0px 72px 9px rgba(255,255,255,0.78);
+    }
+}
+
