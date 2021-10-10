@@ -48,7 +48,7 @@
 
               src="images/yumeii_icon.png" height="16px" width="16px"> Start </button>
           <div id="menu-start" class="dropup-content">
-            <div id="banner-os"> <img height=250px width=28px style="top: 200px;" src="images/OSbanner.jpg"> </div>
+            <div id="banner-os"> <img id="banner-pic" height=250px width=28px src="images/OSbanner.jpg"> </div>
             <div id="menu-window" class="window">
               <div id="menu-opt" class="menu">
                 <div id="opt-program" class="opt dropdown-content"> <img src="images/Programs.png">
