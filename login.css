@@ -60,6 +60,9 @@ a{
     width: 400px;
     height: 100px;
     margin: auto;    
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    animation-delay: 0.4s;
 }
 
 #loginWindow{
@@ -68,6 +71,9 @@ a{
     height: 150px;
     margin: auto;
     transform: translateY(-10%);
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    animation-delay: 1s;
 }
 
 #loginTitleBar{
@@ -154,7 +160,7 @@ input[type=text]{
 
 .progressBar{
   	border-style: inset;
-  	border-color: #a7679f;
+  	border-color: #ffc5fc;
     display: flex;
     flex-direction: column;
     width: 200px;
@@ -175,8 +181,10 @@ input[type=text]{
     width: 250px;
     height: 150px;
     margin: auto;
-    -ms-transform: translateY(100%);
-    transform: translateY(100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translateX(-130px) translateY(-130px);
 }
 
 .faviconDesc{

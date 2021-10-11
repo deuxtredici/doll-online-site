@@ -15,4 +15,20 @@ body{
     width: 200px;
     height: 200px;
     transform:translateX(-45px) translateY(-30px);
+    animation: headHover 1.5s infinite linear;
+}
+
+@keyframes headHover {
+    25%{
+        transform:translateX(-40px) translateY(-25px);
+    }
+    50%{
+        transform:translateX(-45px) translateY(-20px);
+    }
+    75%{
+        transform:translateX(-50px) translateY(-25px);
+    }
+    100%{
+        transform:translateX(-45px) translateY(-30px);
+    }
 }
